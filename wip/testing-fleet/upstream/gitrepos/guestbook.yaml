@@ -7,10 +7,10 @@ metadata:
     team: one
 
 spec:
-  repo: https://github.com/rancher/fleet-examples 
+  repo: https://github.com/harrisonbc/fleet-examples 
   branch: main
   paths:
-  - single-cluster/manifests
+  - simple
 
   targetNamespace: fleet-rbac-1-simpleapp1
 
