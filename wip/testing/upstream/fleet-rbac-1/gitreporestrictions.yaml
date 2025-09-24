@@ -9,3 +9,5 @@ allowedTargetNamespaces:
   - fleet-rbac-1-simpleapp2
   - fleet-rbac-1-simpleapp3
   - fleet-rbac-1-simpleapp4
+  - fleet-rbac-1-simpleapp5
+  - fleet-rbac-1-simpleapp6

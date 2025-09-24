@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    field.cattle.io/projectId: c-m-95gwk458:p-1234 
+  name: fleet-rbac-1-simpleapp1
+---
+  apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    field.cattle.io/projectId: c-m-95gwk458:p-1234 
+  name: fleet-rbac-1-simpleapp2
+---
+  apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    field.cattle.io/projectId: c-m-95gwk458:p-1234 
+  name: fleet-rbac-1-simpleapp3
+---
+  apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    field.cattle.io/projectId: c-m-95gwk458:p-1234 
+  name: fleet-rbac-1-simpleapp4
+---
+  apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    field.cattle.io/projectId: c-m-95gwk458:p-1234 
+  name: fleet-rbac-1-simpleapp5
+---
+  apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    field.cattle.io/projectId: c-m-95gwk458:p-1234 
+  name: fleet-rbac-1-simpleapp6

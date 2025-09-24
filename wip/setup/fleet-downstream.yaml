@@ -1,0 +1,12 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: fleet-rbac-config-ds
+  namespace: fleet-rbac-1
+spec:
+  branch: main
+  paths:
+    - /wip/testing/downstream
+  repo: https://github.com/harrisonbc/fleet-rbac.git
+  targets:
+    - clusterGroup: development-clusters

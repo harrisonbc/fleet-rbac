@@ -16,6 +16,6 @@ bundleSelector:
 # Namespaces, containing clusters, to match by label
 namespaceSelector:
   matchLabels:
-    kubernetes.io/metadata.name: fleet-default
+    kubernetes.io/metadata.name: fleet-rbac-1
     # the label is on the namespace
     #workspace: prod

@@ -1,10 +1,10 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: fleet-rbac-config
+  name: fleet-rbac-config-us
   namespace: fleet-local
 spec:
   branch: main
   paths:
-    - /wip/testing
-  repo: https://github.com/rancher/fleet-examples.git
+    - /wip/testing/upstream
+  repo: https://github.com/harrisonbc/fleet-rbac.git
