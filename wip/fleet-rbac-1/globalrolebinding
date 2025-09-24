@@ -1,0 +1,7 @@
+apiVersion: management.cattle.io/v3
+kind: GlobalRoleBinding
+metadata:
+  name: grb-abbie-fleet-rbac-1
+globalRoleName: fleet-rbac-1
+userName: u-465mqnwz3p
+userPrincipalName: local://u-465mqnwz3p

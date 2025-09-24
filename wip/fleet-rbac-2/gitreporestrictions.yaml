@@ -1,0 +1,11 @@
+kind: GitRepoRestriction
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: fleet-rbac-2-restrictions
+  namespace: fleet-rbac-2
+
+allowedTargetNamespaces:
+  - fleet-rbac-2-simpleapp1
+  - fleet-rbac-2-simpleapp2
+  - fleet-rbac-2-simpleapp3
+  - fleet-rbac-2-simpleapp4

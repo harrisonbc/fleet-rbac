@@ -1,0 +1,26 @@
+apiVersion: management.cattle.io/v3
+kind: GlobalRole
+metadata:
+ name: fleet-rbac-2
+namespacedRules:
+ fleet-rbac-1:
+   - apiGroups:
+       - fleet.cattle.io
+     resources:
+       - gitrepos
+       - bundles
+       - clusterregistrationtokens
+       - gitreporestrictions
+       - clusters
+       - clustergroups
+     verbs:
+       - '*'
+rules:
+ - apiGroups:
+     - management.cattle.io
+   resourceNames:
+     - fleet-rbac-2
+   resources:
+     - fleetworkspaces
+   verbs:
+     - '*'

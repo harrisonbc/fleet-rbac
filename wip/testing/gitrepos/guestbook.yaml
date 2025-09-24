@@ -1,0 +1,12 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: guestbook-simple
+  namespace: fleet-rbac-1
+  labels:
+    team: one
+spec:
+  branch: master
+  paths:
+    - /simple
+  repo: https://github.com/rancher/fleet-examples.git
