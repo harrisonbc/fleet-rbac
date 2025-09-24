@@ -1,0 +1,24 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: simpleapp
+  namespace: fleet-rbac-1
+  labels:
+    team: one
+
+spec:
+  repo: https://github.com/rancher/fleet-examples
+  branch: main
+  paths:
+  - simple
+
+  targetNamespace: fleet-rbac-1-simpleapp1
+
+  # do not match the upstream/local cluster, won't work
+  targets:
+    - clusterSelector:
+        matchExpressions:
+          - key: provider.cattle.io
+            operator: NotIn
+            values:
+              - harvester

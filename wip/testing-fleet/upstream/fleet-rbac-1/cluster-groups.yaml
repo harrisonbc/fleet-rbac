@@ -1,0 +1,10 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterGroup
+metadata:
+  name: development-clusters
+  namespace: fleet-rbac-1
+spec:
+  selector:
+    matchExpressions: []
+    matchLabels:
+      cluster-type: development

@@ -1,0 +1,8 @@
+apiVersion: management.cattle.io/v3
+kind: Project
+metadata:
+  name: p-1234
+  namespace: c-m-rknhcqdt
+spec:
+  clusterName: c-m-rknhcqdt
+  displayName: fleet-rbac-1
