@@ -6,5 +6,5 @@ metadata:
 spec:
   branch: main
   paths:
-    - /wip/setup
+    - /wip/testing
   repo: https://github.com/rancher/fleet-examples.git
