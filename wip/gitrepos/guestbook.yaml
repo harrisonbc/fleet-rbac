@@ -8,6 +8,7 @@ metadata:
 
 spec:
   repo: https://github.com/rancher/fleet-examples
+  branch: main
   paths:
   - simple
 
@@ -15,7 +16,9 @@ spec:
 
   # do not match the upstream/local cluster, won't work
   targets:
-  - name: dev
-    clusterSelector:
-      matchLabels:
-        env: dev
+    - clusterSelector:
+        matchExpressions:
+          - key: provider.cattle.io
+            operator: NotIn
+            values:
+              - harvester
