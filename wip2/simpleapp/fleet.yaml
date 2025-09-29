@@ -41,7 +41,7 @@ helm:
       repository: bashofmann/rancher-demo
       tag: ''
     ingress:
-      enabled: true
+      enabled: false
       host: rancher-demo.192-168-3-240.sslip.io
     replicaCount: 5
     service:
