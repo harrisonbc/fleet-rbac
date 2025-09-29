@@ -1,0 +1,6 @@
+apiVersion: management.cattle.io/v3
+globalRoleName: fleet-projects2
+groupPrincipalName: openldap_group://cn=children,cn=groups,dc=dsm,dc=harrison,dc=local
+kind: GlobalRoleBinding
+metadata:
+  name: grb-children-p2
