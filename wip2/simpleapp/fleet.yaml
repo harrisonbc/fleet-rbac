@@ -37,7 +37,6 @@ helm:
         title: Rancher Demo App
     fullnameOverride: ''
     image:
-      pullPolicy: IfNotPresent
       repository: bashofmann/rancher-demo
       tag: ''
     ingress:
