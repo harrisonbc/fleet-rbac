@@ -34,7 +34,6 @@ helm:
         color: black
         pets: cows
         title: Rancher Demo App
-    fullnameOverride: ''
     image:
       repository: bashofmann/rancher-demo
       tag: ''
