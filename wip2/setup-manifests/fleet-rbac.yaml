@@ -1,7 +1,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: flrrt-rbac-setup
+  name: fleet-rbac-setup
   namespace: fleet-local
 spec:
   branch: main

@@ -1,0 +1,21 @@
+kind: BundleNamespaceMapping
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: mapping
+  namespace: project2
+
+# Bundles to match by label.
+# The labels are defined in the fleet.yaml # labels field or from the
+# GitRepo metadata.labels field
+bundleSelector:
+  matchLabels:
+    team: two
+    # or target one repo
+    #fleet.cattle.io/repo-name: simpleapp
+
+# Namespaces, containing clusters, to match by label
+namespaceSelector:
+  matchLabels:
+    kubernetes.io/metadata.name: fleet-default
+    # the label is on the namespace
+    #workspace: prod
