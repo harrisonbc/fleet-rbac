@@ -1,9 +1,0 @@
-apiVersion: management.cattle.io/v3
-kind: FleetWorkspace
-metadata:
-  name: project1
----
-apiVersion: management.cattle.io/v3
-kind: FleetWorkspace
-metadata:
-  name: project2
