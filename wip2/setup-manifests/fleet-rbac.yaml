@@ -1,0 +1,17 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: flrrt-rbac-setup
+  namespace: fleet-local
+spec:
+  branch: main
+  paths:
+    - wip2/local
+  repo: https://github.com/harrisonbc/fleet-rbac.git
+  targets:
+    - clusterSelector:
+        matchExpressions:
+          - key: provider.cattle.io
+            operator: NotIn
+            values:
+              - harvester
