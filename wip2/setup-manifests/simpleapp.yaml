@@ -1,0 +1,21 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: simpleapp
+  namespace: project1
+  labels:
+    team: one
+spec:
+  repo: https://github.com/harrisonbc/fleet-rbac.git
+  paths:
+  - wip2/simpleapp
+  branch: main
+     
+  targetNamespace: project1simpleapp
+
+      # do not match the upstream/local cluster, won't work
+  targets:
+  - name: dev
+    clusterSelector:
+      matchLabels:
+        env: dev
